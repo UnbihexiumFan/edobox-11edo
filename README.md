@@ -1,22 +1,21 @@
-# JummBox
+# EdoBox
 
-JummBox is an online tool for sketching and sharing instrumental music.
-Try it out [here](jummbus.bitbucket.io)!
-It is a modification of the [original BeepBox](https://beepbox.co), focused on improving ease-of-use.
+EdoBox is an online tool for sketching and sharing instrumental music.
+It is a modification of [JummBox](https://jummbus.bitbucket.io) the [original BeepBox](https://beepbox.co), focused on improving ease-of-use.
 
 All song data is packaged into the URL at the top of your browser. When you make
 changes to the song, the URL is updated to reflect your changes. When you are
 satisfied with your song, just copy and paste the URL to save and share your
 song!
 
-BeepBox, and JummBox by extension, are passion projects and will always be free to use. If you find it
+BeepBox, and JummBox and EdoBox by extension, are passion projects and will always be free to use. If you find it
 valuable and have the means, please support the original creator, [John Nesky](http://www.johnnesky.com/), via
 [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QZJTX9GRYEV9N&currency_code=USD)!
-JummBox is developed by [Jummbus](http://www.twitter.com/jummbus).
+EdoBox is developed by UnbihexiumFan.
 
 ## Compiling
 
-The compilation procedure is identical to the repository for BeepBox. I will include the excerpt on compiling from that page's readme below for convenience:
+The compilation procedure is identical to the repository for BeepBox and Jummbox. I will include the excerpt on compiling from the Beepbox page's readme below for convenience:
 
 The source code is available under the MIT license. The code is written in
 [TypeScript](https://www.typescriptlang.org/), which requires
@@ -24,13 +23,13 @@ The source code is available under the MIT license. The code is written in
 build this project, open the command line and run:
 
 ```
-git clone https://github.com/jummbus/jummbox.git
-cd jummbox
+git clone https://github.com/unbihexiumfan/edobox-11edo.git
+cd edobox-11edo
 npm install
 npm run build
 ```
 
-JummBox makes a divergence from BeepBox that necessitates an additional dependency:
+JummBox and Edobox make a divergence from BeepBox that necessitates an additional dependency:
 rather than using the (rather poor) default HTML select implementation, the custom
 library [select2](https://select2.org) is employed. select2 has an explicit dependency
 on [jQuery](https://jquery.com) as well, so you may need to install the following
@@ -76,8 +75,8 @@ The build process outputs JavaScript files into this folder.
 ## Dependencies
 
 Most of the dependencies are listed in [package.json](package.json), although
-I'd like to note that JummBox also has an indirect, optional dependency on
+I'd like to note that JummBox and Edobox also have an indirect, optional dependency on
 [lamejs](https://www.npmjs.com/package/lamejs) via
 [jsdelivr](https://www.jsdelivr.com/) for exporting .mp3 files. If the user
-attempts to export an .mp3 file, JummBox will direct the browser to download
+attempts to export an .mp3 file, JummBox and EdoBox will direct the browser to download
 that dependency on demand.
